@@ -9,7 +9,8 @@ class Person{
 
 let p = new Person('sb')
 // alert(p.getName());
+console.log(p);
 
-setInterval(()=>{
-    document.write(new Date().toLocaleString() + '</br>')
-},1000)
+// setInterval(()=>{
+//     // document.write(new Date().toLocaleString() + '</br>')
+// },1000)
