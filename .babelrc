@@ -1,7 +1,11 @@
-
 {
     "presets": [
-        "@babel/preset-env"
+        "env",
+        "stage-0"
     ],
-    "plugins":[]
+    "plugins": [
+        "transform-runtime",
+        "transform-decorators-legacy",
+        "transform-class-properties"
+    ]
 }

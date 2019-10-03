@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js desing</title>
+</head>
+<body>
+    <div id='div1'>
+        <a href="#">a1</a>
+        <a href="#">a2</a>
+        <a href="#">a3</a>
+    </div>
+
+    <script>
+        var div1 = document.getElementById('div1')
+        div1.addEventListener('click', function(e){
+            var target = e.target
+            if(target.nodeName = 'A'){
+                console.log(target.innerHTML)
+            }
+        })
+    </script>
+
+
+
+</html>

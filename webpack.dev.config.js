@@ -2,10 +2,12 @@ const path = require('path')
 const HtmlPluginPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        "index":'./src/index.js',
+    },
     output: {
         path: __dirname,
-        filename: './release/bundle'+ new Date().getTime()+'.js'
+        filename: './release/[name].js'
     },
 
     module: {

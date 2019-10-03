@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js desing</title>
+</head>
+<body>
+    <div id='div1'>
+        <a href="#">a1</a>
+        <a href="#">a2</a>
+        <a href="#">a3</a>
+    </div>
+
+    <script>
+        var arr = [1,2,3]
+        var nodeList = document.getElementsByTagName('a')
+        var $a = $('a')
+
+        arr.forEach(item=>{
+            console.log(item)
+        })
+
+        var  length = nodeList.length
+        for(let i=0; i<length; i++){
+            
+        }
+
+        $a.each(function(key, elem){
+            console.log(key, elem);
+        })
+
+        function each(data){
+            var $data = $(data)
+            $data.each(function(key,val){
+                console.log(key, val)
+            })
+        }
+
+    </script>
+
+
+
+</html>
